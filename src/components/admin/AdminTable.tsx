@@ -32,7 +32,7 @@ const myTheme: Theme = themeQuartz.withParams({
 const AdminTable = () => {
     const [apiResponse, setApiResponse] = useState<AnalyticsInterface[]>([]);
     const paginationPageSizeSelector = useMemo<number[] | boolean>(() => {
-        return [ 10, 15, 20];
+        return [10, 15, 20];
     }, []);
 
     const defaultColDef = useMemo<ColDef>(() => {
@@ -59,8 +59,8 @@ const AdminTable = () => {
 
     const columnDefs: ColDef[] = [
         { headerName: "Unique ID", field: "unique_id", resizable: false },
-        { headerName: "Visit Count", field: "visit_count", resizable: false },
         { headerName: "Name", field: "name", resizable: false },
+        { headerName: "Visit Count", field: "visit_count", resizable: false },
         { headerName: "Mobile", field: "mobile", resizable: false },
         { headerName: "Address", field: "address", resizable: false },
         { headerName: "Purpose", field: "purpose", resizable: false },

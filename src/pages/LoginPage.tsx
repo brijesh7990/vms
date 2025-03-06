@@ -52,7 +52,6 @@ const LoginPage = () => {
                     <h2 className="text-2xl text-center text-white font-extrabold mb-6">Login</h2>
 
                     {/* Loading & Error Messages */}
-                    {isError && <p className="text-red-600 text-center mb-2">⚠ Error occurred! Please try again.</p>}
 
                     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
                         {/* Username Field */}
