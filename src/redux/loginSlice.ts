@@ -15,7 +15,7 @@ export const loginApi = createApi({
     endpoints: (build) => ({
         loginCredentialSend: build.mutation<string , Partial<LoginInterface>>({
             query: (body) => ({
-                url: ``,
+                url: `login`,
                 method: 'POST',
                 body,
             }),
